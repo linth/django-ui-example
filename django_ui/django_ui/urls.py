@@ -16,6 +16,10 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
+from select2 import views
+
 urlpatterns = [
     path('admin/', admin.site.urls),
+
+    path('select2/', views.select2, name='select2'),
 ]
